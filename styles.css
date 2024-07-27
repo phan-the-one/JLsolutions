@@ -1,0 +1,300 @@
+body {
+    font-family: 'Bona Nova SC', serif; /* Use Bona Nova SC font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black; /* Changed color to black */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: black; /* Changed color to black */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Adjusted for fixed header */
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+#home {
+    background-image: url('washing-laundry-741x410\(1\).jpg');
+    opacity: .80;
+    
+}
+
+#pricing {
+    background-color: #e2e2e2;
+}
+
+#contact {
+    background-color: #dcdbdb;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*.container {
+    display: flex;
+    height: 100vh;
+}
+
+.form-container, .map-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.map-container {
+        padding: 20px;
+        text-align: center;
+    }
+    
+h2 {
+        margin-bottom: 20px;
+    }
+    
+#map {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+    }
+    */
+
+    .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    form label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    form input {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    form button {
+        width: 90%;
+        padding: 10px;
+        background-color: #70426a;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    form button:hover {
+        background-color: #45a049;
+    }
+
+
+.textbox {
+    font-family: "Bebas Neue", sans-serif; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    width: 400px; /* Max width of the textbox */
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    nav {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        left: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .textbox {
+        width: 90%; /* Full width on small screens */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 60px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+  
+}
